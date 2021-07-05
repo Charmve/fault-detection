@@ -1,0 +1,122 @@
+{
+  "modified": "Mon Jun 17 2019 01:08:31 GMT+0800 (中国标准时间)",
+  "background": "rgb(0,0,0)",
+  "width": 1800,
+  "height": 500,
+  "interactive": true,
+  "comps": [
+    {
+      "type": "roundRect",
+      "background": "rgba(40,130,120,0.4)",
+      "borderColor": "rgba(67,191,177,0.6)",
+      "gradientColor": "rgba(24,74,74,0.50)",
+      "cornerRadius": 8,
+      "rect": [
+        1080.60667,
+        14.42503,
+        530.37259,
+        171.14995
+      ]
+    },
+    {
+      "type": "components/progressBar/progressBar.json",
+      "displayName": "progressBar",
+      "rotation": 4.71239,
+      "rect": [
+        1055.07513,
+        93.63144,
+        144.72808,
+        12.73712
+      ],
+      "value": 0.4,
+      "valueVisible": false,
+      "foreColor": "rgb(63,215,194)",
+      "background": "rgba(32,57,74,0)"
+    },
+    {
+      "type": "components/progressBar/progressBar.json",
+      "displayName": "progressBar",
+      "rotation": 4.71239,
+      "rect": [
+        1074.43298,
+        93.63144,
+        144.72808,
+        12.73712
+      ],
+      "value": 1,
+      "valueVisible": false,
+      "foreColor": "rgb(63,215,194)",
+      "background": "rgba(32,57,74,0)"
+    },
+    {
+      "type": "components/progressBar/progressBar.json",
+      "displayName": "progressBar",
+      "rotation": 4.71239,
+      "rect": [
+        1138.96457,
+        93.63144,
+        144.72808,
+        12.73712
+      ],
+      "value": 0.2,
+      "valueVisible": false,
+      "foreColor": "rgb(63,215,194)",
+      "background": "rgba(32,57,74,0)"
+    },
+    {
+      "type": "components/progressBar/progressBar.json",
+      "displayName": "progressBar",
+      "rotation": 4.71239,
+      "rect": [
+        1096.17725,
+        93.63144,
+        144.72808,
+        12.73712
+      ],
+      "value": 0.6,
+      "valueVisible": false,
+      "foreColor": "rgb(63,215,194)",
+      "background": "rgba(32,57,74,0)"
+    },
+    {
+      "type": "components/progressBar/progressBar.json",
+      "displayName": "progressBar",
+      "rotation": 4.71239,
+      "rect": [
+        1117.27296,
+        93.63144,
+        144.72808,
+        12.73712
+      ],
+      "valueVisible": false,
+      "foreColor": "rgb(63,215,194)",
+      "background": "rgba(32,57,74,0)"
+    },
+    {
+      "type": "roundRect",
+      "background": "rgba(40,130,120,0.4)",
+      "borderColor": "rgba(67,191,177,0.6)",
+      "gradientColor": "rgba(24,74,74,0.50)",
+      "cornerRadius": 8,
+      "rect": [
+        105.21061,
+        100,
+        846.3609,
+        372.27874
+      ]
+    },
+    {
+      "type": "roundRect",
+      "background": "rgba(40,130,120,0.4)",
+      "borderColor": "rgba(67,191,177,0.6)",
+      "gradientColor": "rgba(24,74,74,0.50)",
+      "cornerRadius": 8,
+      "rect": [
+        1427.3016,
+        327.3219,
+        138.05413,
+        118.83402
+      ]
+    }
+  ]
+}

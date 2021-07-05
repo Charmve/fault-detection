@@ -1,0 +1,5574 @@
+{
+  "v": "7.0.2",
+  "p": {
+    "background": "rgb(0,0,0)",
+    "envmap": "assets/htdesign/scene/environment/dusk_01.jpg",
+    "autoAdjustIndex": true,
+    "hierarchicalRendering": true,
+    "postProcessingData": {
+      "bloom": {
+        "enable": true,
+        "strength": 0.2,
+        "threshold": 0,
+        "radius": 0.4,
+        "overrideAlpha": true
+      },
+      "dof": {
+        "enable": false,
+        "aperture": 0.011,
+        "maxblur": 1,
+        "image": "assets/Depth.png"
+      }
+    }
+  },
+  "d": [
+    {
+      "c": "ht.Node",
+      "i": 6390,
+      "p": {
+        "displayName": "天空球",
+        "tag": "skyBox",
+        "rotation": -1.05313,
+        "width": 10000,
+        "height": 10000,
+        "tall": 10000
+      },
+      "s": {
+        "shape3d": "sphere",
+        "shape3d.color": "#DDDDDD",
+        "shape3d.reverse.flip": true,
+        "2d.editable": false,
+        "3d.editable": false,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.image": "assets/htdesign/scene/skybox/vague_01.jpg",
+        "2d.visible": false,
+        "3d.visible": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6391,
+      "p": {
+        "displayName": "HT科幻地面",
+        "tag": "floor",
+        "rotation": -1.5708,
+        "anchorElevation": 0,
+        "scale": {
+          "x": 2.95274,
+          "y": 2.95274
+        },
+        "scaleTall": 2.95274,
+        "width": 3662.07784,
+        "height": 4055.35793
+      },
+      "s": {
+        "shape3d": "models/机械设备/风力发电机/HT科幻地面.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "2d.selectable": false,
+        "3d.selectable": false,
+        "shape3d.uv.offset": [
+          0,
+          -5.19
+        ],
+        "shape3d.opacity": 0.4,
+        "shape3d.blend": "rgb(112,150,255)",
+        "2d.visible": false,
+        "3d.visible": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6392,
+      "p": {
+        "displayName": "交换大",
+        "position": {
+          "x": -294.29029,
+          "y": 603.78252
+        },
+        "anchorElevation": 0,
+        "width": 68.11256,
+        "height": 68.06295,
+        "tall": 137.45963,
+        "elevation": 0.00001
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6393,
+      "p": {
+        "parent": {
+          "__i": 6392
+        },
+        "tag": "float",
+        "image": "symbols/文本/圆框.json",
+        "host": {
+          "__i": 6392
+        },
+        "position": {
+          "x": -294.29029,
+          "y": 603.78252
+        },
+        "width": -1,
+        "height": 64,
+        "tall": -1,
+        "elevation": 38.31882
+      },
+      "s": {
+        "shape3d": "plane",
+        "shape3d.image": "symbols/图标库/电信/平面通讯图标/策略管理服务器2.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "envmap": 1,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      },
+      "a": {
+        "name": "INTERNET"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6394,
+      "p": {
+        "parent": {
+          "__i": 6392
+        },
+        "host": {
+          "__i": 6392
+        },
+        "position": {
+          "x": -293.88808,
+          "y": 603.6946
+        },
+        "anchorElevation": 0,
+        "elevation": 30.4439
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测服务2_灯.json",
+        "wf.visible": "selected",
+        "shape3d.blend": "rgb(71,255,148)",
+        "shape3d.image.cache": true,
+        "2d.visible": false,
+        "3d.visible": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6395,
+      "p": {
+        "displayName": "光束_方",
+        "parent": {
+          "__i": 6392
+        },
+        "tag": "rotate",
+        "host": {
+          "__i": 6392
+        },
+        "position": {
+          "x": -294.03396,
+          "y": 603.73016
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.72416,
+          "y": 0.72663
+        },
+        "scaleTall": 0.52,
+        "tall": 190,
+        "elevation": 28.16364
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_方.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.7,
+        "shape3d.blend": "rgb(71,224,255)",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6396,
+      "p": {
+        "parent": {
+          "__i": 6392
+        },
+        "host": {
+          "__i": 6392
+        },
+        "position": {
+          "x": -294.38282,
+          "y": 604.2355
+        },
+        "anchorElevation": 0,
+        "elevation": 30.47518
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_圆角.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 1,
+        "shape3d.blend": "rgb(71,224,255)",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6397,
+      "p": {
+        "parent": {
+          "__i": 6392
+        },
+        "host": {
+          "__i": 6392
+        },
+        "position": {
+          "x": -294.31752,
+          "y": 603.78495
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测服务2_底座.json",
+        "wf.visible": "selected",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6398,
+      "p": {
+        "parent": {
+          "__i": 6392
+        },
+        "image": "symbols/文本/圆角方框.json",
+        "host": {
+          "__i": 6392
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": -294.39623,
+          "y": 602.97429
+        },
+        "scale": {
+          "x": 0.23,
+          "y": 0.23
+        },
+        "scaleTall": 0.23
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/文本/圆角方框.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6399,
+      "p": {
+        "displayName": "防火墙",
+        "position": {
+          "x": -299.44334,
+          "y": 355.17598
+        },
+        "anchorElevation": 0,
+        "width": 79.8322,
+        "height": 80.13109,
+        "tall": 133.23333
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6400,
+      "p": {
+        "parent": {
+          "__i": 6399
+        },
+        "tag": "float",
+        "image": "symbols/文本/圆框.json",
+        "host": {
+          "__i": 6399
+        },
+        "position": {
+          "x": -299.28568,
+          "y": 359.01098
+        },
+        "width": -1,
+        "height": 64,
+        "tall": -1,
+        "elevation": 74.07276
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/图标库/电信/平面通讯图标/防火墙.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "envmap": 1,
+        "shape3d.image.cache": true,
+        "shape3d.blend": "#FEB64D",
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.alwaysOnTop": true
+      },
+      "a": {
+        "name": "INTERNET"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6401,
+      "p": {
+        "parent": {
+          "__i": 6399
+        },
+        "tag": "rotate",
+        "host": {
+          "__i": 6399
+        },
+        "position": {
+          "x": -301.21726,
+          "y": 355.17598
+        },
+        "anchorElevation": 0,
+        "width": 78.83083,
+        "height": 35.95702,
+        "elevation": 16.20293
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_方.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.7,
+        "shape3d.blend": "#FEB64D",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6402,
+      "p": {
+        "parent": {
+          "__i": 6399
+        },
+        "host": {
+          "__i": 6399
+        },
+        "position": {
+          "x": -301.21726,
+          "y": 355.17598
+        },
+        "anchorElevation": 0,
+        "width": 83.68904,
+        "height": 38.17306,
+        "elevation": 15.17601
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测服务_灯.json",
+        "wf.visible": "selected",
+        "shape3d.blend": "#FEB64D",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6403,
+      "p": {
+        "parent": {
+          "__i": 6399
+        },
+        "host": {
+          "__i": 6399
+        },
+        "position": {
+          "x": -302.37578,
+          "y": 355.17598
+        },
+        "anchorElevation": 0,
+        "width": 113.39546,
+        "height": 113.39531
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测服务_底座.json",
+        "wf.visible": "selected",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6404,
+      "p": {
+        "parent": {
+          "__i": 6399
+        },
+        "image": "symbols/文本/圆角方框.json",
+        "host": {
+          "__i": 6399
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": -302.37578,
+          "y": 355.17598
+        },
+        "scale": {
+          "x": 0.24,
+          "y": 0.24
+        },
+        "scaleTall": 0.24,
+        "width": 710,
+        "height": 2.84085,
+        "tall": 710
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/文本/圆角方框.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6405,
+      "p": {
+        "displayName": "第三方系统",
+        "position": {
+          "x": 427.05785,
+          "y": 1197.99777
+        },
+        "anchorElevation": 0,
+        "width": 71.21554,
+        "height": 71.23553,
+        "tall": 137.2396
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6406,
+      "p": {
+        "parent": {
+          "__i": 6405
+        },
+        "tag": "float",
+        "image": "symbols/文本/圆框.json",
+        "host": {
+          "__i": 6405
+        },
+        "position": {
+          "x": 426.82684,
+          "y": 1198.03295
+        },
+        "width": -1,
+        "height": 64,
+        "tall": -1,
+        "elevation": 104.73937
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/图标库/电信/平面通讯图标/交换机2.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "envmap": 1,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      },
+      "a": {
+        "name": "INTERNET"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6407,
+      "p": {
+        "parent": {
+          "__i": 6405
+        },
+        "host": {
+          "__i": 6405
+        },
+        "position": {
+          "x": 427.06407,
+          "y": 1198.01395
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/第三方系统.json",
+        "wf.visible": "selected",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6408,
+      "p": {
+        "parent": {
+          "__i": 6405
+        },
+        "host": {
+          "__i": 6405
+        },
+        "position": {
+          "x": 426.85054,
+          "y": 1198.83573
+        },
+        "anchorElevation": 0,
+        "elevation": 67.90622
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/第三方系统_灯.json",
+        "wf.visible": "selected",
+        "shape3d.blend": "rgb(122,237,255)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6409,
+      "p": {
+        "parent": {
+          "__i": 6405
+        },
+        "host": {
+          "__i": 6405
+        },
+        "position": {
+          "x": 427.05164,
+          "y": 1197.9816
+        },
+        "anchorElevation": 0,
+        "elevation": 16.33107
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/第三方系统_护罩.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.3,
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6410,
+      "p": {
+        "parent": {
+          "__i": 6405
+        },
+        "tag": "rotate",
+        "host": {
+          "__i": 6405
+        },
+        "position": {
+          "x": 426.82684,
+          "y": 1198.76563
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.4,
+          "y": 0.4
+        },
+        "scaleTall": 0.4,
+        "elevation": 67.83336
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_圆.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.7,
+        "shape3d.blend": "rgb(71,224,255)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6411,
+      "p": {
+        "parent": {
+          "__i": 6405
+        },
+        "image": "symbols/文本/圆角方框.json",
+        "host": {
+          "__i": 6405
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": 427.44636,
+          "y": 1197.80295
+        },
+        "scale": {
+          "x": 0.23,
+          "y": 0.23
+        },
+        "scaleTall": 0.23
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/文本/圆角方框.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "shape3d.image.cache": true,
+        "2d.editable": false,
+        "3d.editable": false,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6412,
+      "p": {
+        "displayName": "internet",
+        "tag": "internet",
+        "position": {
+          "x": -300,
+          "y": -691.41651
+        },
+        "anchorElevation": 0,
+        "width": 193.4095,
+        "height": 193.40961,
+        "tall": 204.93798
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6413,
+      "p": {
+        "parent": {
+          "__i": 6412
+        },
+        "host": {
+          "__i": 6412
+        },
+        "position": {
+          "x": -300,
+          "y": -691.4165
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测中心服务.json",
+        "wf.visible": "selected",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6414,
+      "p": {
+        "parent": {
+          "__i": 6412
+        },
+        "host": {
+          "__i": 6412
+        },
+        "position": {
+          "x": -299.8354,
+          "y": -691.62068
+        },
+        "anchorElevation": 0,
+        "elevation": 33.09735
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测中心服务_灯.json",
+        "wf.visible": "selected",
+        "shape3d.blend": "rgb(79,255,158)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6415,
+      "p": {
+        "parent": {
+          "__i": 6412
+        },
+        "tag": "line",
+        "host": {
+          "__i": 6412
+        },
+        "position": {
+          "x": -300,
+          "y": -691.41651
+        },
+        "anchorElevation": 0,
+        "elevation": 31.37806
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/科幻数字线条.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.opacity": 0.7,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6416,
+      "p": {
+        "parent": {
+          "__i": 6412
+        },
+        "tag": "rotate",
+        "host": {
+          "__i": 6412
+        },
+        "position": {
+          "x": -299.44334,
+          "y": -691.61963
+        },
+        "anchorElevation": 0,
+        "elevation": 31.42238
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_圆.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.7,
+        "shape3d.blend": "rgb(71,255,224)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6417,
+      "p": {
+        "parent": {
+          "__i": 6412
+        },
+        "image": "symbols/文本/圆框.json",
+        "host": {
+          "__i": 6412
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": -299.52479,
+          "y": -691.72395
+        },
+        "scale": {
+          "x": 0.55,
+          "y": 0.55
+        },
+        "scaleTall": 0.55
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/文本/圆框.json",
+        "shape3d.image.cache": true,
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "2d.editable": false,
+        "3d.editable": false,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6418,
+      "p": {
+        "parent": {
+          "__i": 6412
+        },
+        "host": {
+          "__i": 6412
+        },
+        "position": {
+          "x": -299.44334,
+          "y": -691.61963
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 1.3,
+          "y": 1.3
+        },
+        "scaleTall": 0.7,
+        "elevation": 31.42238
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_圆.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.7,
+        "shape3d.blend": "rgb(71,255,224)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6419,
+      "p": {
+        "parent": {
+          "__i": 6412
+        },
+        "tag": "serverPanel2",
+        "host": {
+          "__i": 6412
+        },
+        "rotation": 2.89981,
+        "position": {
+          "x": -300.91762,
+          "y": -690.50741
+        },
+        "anchorElevation": 0,
+        "width": 150,
+        "height": 150,
+        "tall": 130,
+        "elevation": 157.72239
+      },
+      "s": {
+        "shape3d": "cylinder",
+        "shape3d.color": "#DDDDDD",
+        "shape3d.bottom.visible": false,
+        "shape3d.top.visible": false,
+        "shape3d.image": "symbols/文本/服务端UI2.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "shape3d.side": 50,
+        "shape3d.opacity": 0.6,
+        "shape3d.side.to": 0,
+        "shape3d.from.visible": false,
+        "shape3d.to.visible": false,
+        "wf.visible": "selected",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6420,
+      "p": {
+        "parent": {
+          "__i": 6412
+        },
+        "tag": "serverPanel1",
+        "host": {
+          "__i": 6412
+        },
+        "rotation": 3.91871,
+        "position": {
+          "x": -300,
+          "y": -691.41651
+        },
+        "anchorElevation": 0,
+        "width": 200,
+        "height": 200,
+        "tall": 130,
+        "elevation": 75.91798
+      },
+      "s": {
+        "shape3d": "cylinder",
+        "shape3d.color": "#DDDDDD",
+        "shape3d.bottom.visible": false,
+        "shape3d.top.visible": false,
+        "shape3d.image": "symbols/文本/服务端UI.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "shape3d.side": 50,
+        "shape3d.opacity": 0.6,
+        "shape3d.from.visible": false,
+        "shape3d.to.visible": false,
+        "wf.visible": "selected",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6421,
+      "p": {
+        "parent": {
+          "__i": 6412
+        },
+        "image": "symbols/文本/圆框.json",
+        "host": {
+          "__i": 6412
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": -299.52479,
+          "y": -691.72395
+        },
+        "scale": {
+          "x": 0.55,
+          "y": 0.55
+        },
+        "scaleTall": 0.55,
+        "width": -1,
+        "height": -1,
+        "tall": -1
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/文本/圆框.json",
+        "shape3d.image.cache": true,
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "envmap": 1,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 6422,
+      "p": {
+        "tag": "pipeline",
+        "position": {
+          "x": -72.09746,
+          "y": 934.93039
+        },
+        "width": 460.73485,
+        "height": 1,
+        "tall": 0,
+        "elevation": 14.51201,
+        "segments": {
+          "__a": [
+            1,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 158.26997,
+              "y": 934.93039,
+              "e": 14.51201
+            },
+            {
+              "x": -302.46488,
+              "y": 934.93039,
+              "e": 14.51201
+            }
+          ]
+        },
+        "thickness": 6
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgb(242,83,75)",
+        "shape3d.top.color": "#BFBFBF",
+        "shape3d.bottom.color": "#BFBFBF",
+        "shape.border.color": "#BFBFBF",
+        "shape3d.reverse.flip": true,
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.5,
+        "all.visible": false,
+        "top.visible": true,
+        "top.image": "assets/objs/故障检测平台/电路流动.png",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6423,
+      "p": {
+        "displayName": "交换机",
+        "position": {
+          "x": -299.44334,
+          "y": -229.80696
+        },
+        "anchorElevation": 0,
+        "width": 99,
+        "height": 99,
+        "tall": 101.50788
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6424,
+      "p": {
+        "parent": {
+          "__i": 6423
+        },
+        "image": "symbols/文本/圆框.json",
+        "host": {
+          "__i": 6423
+        },
+        "position": {
+          "x": -299.52479,
+          "y": -229.62948
+        },
+        "width": -1,
+        "height": 64,
+        "tall": -1,
+        "elevation": 38.31882
+      },
+      "s": {
+        "shape3d": "plane",
+        "shape3d.image": "symbols/图标库/电信/平面通讯图标/路由2.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "envmap": 1,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      },
+      "a": {
+        "name": "INTERNET"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6425,
+      "p": {
+        "displayName": "中间件",
+        "parent": {
+          "__i": 6423
+        },
+        "host": {
+          "__i": 6423
+        },
+        "position": {
+          "x": -301.65382,
+          "y": -231.65581
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.3,
+          "y": 0.3
+        },
+        "scaleTall": 0.6,
+        "width": 422.68988,
+        "height": 422.6901
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测中心服务.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6426,
+      "p": {
+        "parent": {
+          "__i": 6423
+        },
+        "tag": "rotate",
+        "host": {
+          "__i": 6423
+        },
+        "position": {
+          "x": -300.43725,
+          "y": -232.09974
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.55018,
+          "y": 0.55018
+        },
+        "scaleTall": 0.91696,
+        "width": 210.76284,
+        "height": 210.76284,
+        "tall": 85,
+        "elevation": 14.75008
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_圆.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.7,
+        "shape3d.blend": "rgb(71,224,255)",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6427,
+      "p": {
+        "parent": {
+          "__i": 6423
+        },
+        "host": {
+          "__i": 6423
+        },
+        "position": {
+          "x": -302.37578,
+          "y": -232.02388
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 1.22808,
+          "y": 1.22808
+        },
+        "scaleTall": 1.22808,
+        "width": 154.66586,
+        "height": 154.66586,
+        "elevation": 16.0129
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_圆锥.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.7,
+        "shape3d.blend": "rgb(71,224,255)",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6428,
+      "p": {
+        "parent": {
+          "__i": 6423
+        },
+        "image": "symbols/文本/圆框.json",
+        "host": {
+          "__i": 6423
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": -300.91762,
+          "y": -229.97916
+        },
+        "scale": {
+          "x": 0.18,
+          "y": 0.16
+        },
+        "scaleTall": 0.18,
+        "width": 1093,
+        "height": 4.37093,
+        "tall": 1093
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/文本/圆框.json",
+        "shape3d.image.cache": true,
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6429,
+      "p": {
+        "displayName": "交换大",
+        "position": {
+          "x": -568.20325,
+          "y": 1196.40663
+        },
+        "anchorElevation": 0,
+        "width": 68.11256,
+        "height": 68.06295,
+        "tall": 137.45963,
+        "elevation": 0.00001
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6430,
+      "p": {
+        "parent": {
+          "__i": 6429
+        },
+        "host": {
+          "__i": 6429
+        },
+        "position": {
+          "x": -554.1147,
+          "y": 1195.50021
+        },
+        "width": 3,
+        "height": 3,
+        "tall": 3,
+        "elevation": 121.93558
+      },
+      "s": {
+        "all.color": "rgba(64,252,255,0.30)",
+        "front.color": "",
+        "left.color": "",
+        "right.color": "",
+        "back.color": "",
+        "top.color": "",
+        "bottom.color": "",
+        "all.transparent": true,
+        "all.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6431,
+      "p": {
+        "parent": {
+          "__i": 6429
+        },
+        "host": {
+          "__i": 6429
+        },
+        "position": {
+          "x": -545.77449,
+          "y": 1214.02771
+        },
+        "width": 5,
+        "height": 5,
+        "tall": 5,
+        "elevation": 141.44948
+      },
+      "s": {
+        "all.color": "rgba(64,252,255,0.30)",
+        "front.color": "",
+        "left.color": "",
+        "right.color": "",
+        "back.color": "",
+        "top.color": "",
+        "bottom.color": "",
+        "all.transparent": true,
+        "all.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6432,
+      "p": {
+        "parent": {
+          "__i": 6429
+        },
+        "image": "symbols/文本/圆框.json",
+        "host": {
+          "__i": 6429
+        },
+        "position": {
+          "x": -568.20325,
+          "y": 1196.40663
+        },
+        "width": -1,
+        "height": 64,
+        "tall": -1,
+        "elevation": 128.26084
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/图标库/电信/平面通讯图标/SIPP.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "envmap": 1,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      },
+      "a": {
+        "name": "INTERNET"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6433,
+      "p": {
+        "parent": {
+          "__i": 6429
+        },
+        "host": {
+          "__i": 6429
+        },
+        "position": {
+          "x": -568.30919,
+          "y": 1196.8596
+        },
+        "anchorElevation": 0,
+        "tall": 9,
+        "elevation": 101.08807
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测服务_飘浮.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6434,
+      "p": {
+        "parent": {
+          "__i": 6429
+        },
+        "tag": "float",
+        "image": "symbols/文本/圆框.json",
+        "host": {
+          "__i": 6429
+        },
+        "position": {
+          "x": -568.20325,
+          "y": 1196.40663
+        },
+        "width": -1,
+        "height": 64,
+        "tall": -1,
+        "elevation": 68.25616
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/图标库/电信/平面通讯图标/策略管理服务器2.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "envmap": 1,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      },
+      "a": {
+        "name": "INTERNET"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6435,
+      "p": {
+        "parent": {
+          "__i": 6429
+        },
+        "tag": "rotate",
+        "host": {
+          "__i": 6429
+        },
+        "position": {
+          "x": -567.94692,
+          "y": 1196.35427
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.72416,
+          "y": 0.72663
+        },
+        "scaleTall": 0.43412,
+        "tall": 349,
+        "elevation": 28.16364
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_方.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.7,
+        "shape3d.blend": "rgb(71,224,255)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6436,
+      "p": {
+        "parent": {
+          "__i": 6429
+        },
+        "host": {
+          "__i": 6429
+        },
+        "position": {
+          "x": -568.29578,
+          "y": 1196.85961
+        },
+        "anchorElevation": 0,
+        "tall": 67,
+        "elevation": 30.47518
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_圆角.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 1,
+        "shape3d.blend": "rgb(71,224,255)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6437,
+      "p": {
+        "parent": {
+          "__i": 6429
+        },
+        "host": {
+          "__i": 6429
+        },
+        "position": {
+          "x": -568.23048,
+          "y": 1196.40906
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测服务2_底座.json",
+        "wf.visible": "selected",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6438,
+      "p": {
+        "parent": {
+          "__i": 6429
+        },
+        "image": "symbols/文本/圆角方框.json",
+        "host": {
+          "__i": 6429
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": -568.30919,
+          "y": 1195.5984
+        },
+        "scale": {
+          "x": 0.23,
+          "y": 0.23
+        },
+        "scaleTall": 0.23
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/文本/圆角方框.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "shape3d.image.cache": true,
+        "2d.editable": false,
+        "3d.editable": false,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6439,
+      "p": {
+        "displayName": "交换大",
+        "position": {
+          "x": -297.61383,
+          "y": 94.59898
+        },
+        "anchorElevation": 0,
+        "width": 68.11256,
+        "height": 68.06295,
+        "tall": 137.45963,
+        "elevation": 0.00001
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6440,
+      "p": {
+        "parent": {
+          "__i": 6439
+        },
+        "tag": "float",
+        "image": "symbols/文本/圆框.json",
+        "host": {
+          "__i": 6439
+        },
+        "position": {
+          "x": -297.61383,
+          "y": 94.59898
+        },
+        "width": -1,
+        "height": 64,
+        "tall": -1,
+        "elevation": 38.31882
+      },
+      "s": {
+        "shape3d": "plane",
+        "shape3d.image": "symbols/图标库/电信/平面通讯图标/交换机4.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "envmap": 1,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      },
+      "a": {
+        "name": "INTERNET"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6441,
+      "p": {
+        "parent": {
+          "__i": 6439
+        },
+        "tag": "rotate",
+        "host": {
+          "__i": 6439
+        },
+        "position": {
+          "x": -297.3575,
+          "y": 94.54662
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.72416,
+          "y": 0.72663
+        },
+        "scaleTall": 0.43412,
+        "tall": 190,
+        "elevation": 28.16364
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_方.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.7,
+        "shape3d.blend": "rgb(71,224,255)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6442,
+      "p": {
+        "parent": {
+          "__i": 6439
+        },
+        "host": {
+          "__i": 6439
+        },
+        "position": {
+          "x": -297.70636,
+          "y": 95.05196
+        },
+        "anchorElevation": 0,
+        "elevation": 30.47518
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_圆角.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 1,
+        "shape3d.blend": "rgb(71,224,255)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6443,
+      "p": {
+        "parent": {
+          "__i": 6439
+        },
+        "host": {
+          "__i": 6439
+        },
+        "position": {
+          "x": -297.64106,
+          "y": 94.60141
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测服务2_底座.json",
+        "wf.visible": "selected",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6444,
+      "p": {
+        "parent": {
+          "__i": 6439
+        },
+        "image": "symbols/文本/圆角方框.json",
+        "host": {
+          "__i": 6439
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": -297.71977,
+          "y": 93.79075
+        },
+        "scale": {
+          "x": 0.23,
+          "y": 0.23
+        },
+        "scaleTall": 0.23
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/文本/圆角方框.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "shape3d.image.cache": true,
+        "2d.editable": false,
+        "3d.editable": false,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6445,
+      "p": {
+        "displayName": "交换大",
+        "position": {
+          "x": -297.61383,
+          "y": 1425.83292
+        },
+        "anchorElevation": 0,
+        "width": 68.11256,
+        "height": 68.06295,
+        "tall": 137.45963,
+        "elevation": 0.00001
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6446,
+      "p": {
+        "parent": {
+          "__i": 6445
+        },
+        "tag": "float",
+        "image": "symbols/文本/圆框.json",
+        "host": {
+          "__i": 6445
+        },
+        "position": {
+          "x": -297.61383,
+          "y": 1425.83292
+        },
+        "width": -1,
+        "height": 64,
+        "tall": -1,
+        "elevation": 38.31882
+      },
+      "s": {
+        "shape3d": "plane",
+        "shape3d.image": "symbols/图标库/电信/平面通讯图标/交换机4.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "envmap": 1,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      },
+      "a": {
+        "name": "INTERNET"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6447,
+      "p": {
+        "parent": {
+          "__i": 6445
+        },
+        "tag": "rotate",
+        "host": {
+          "__i": 6445
+        },
+        "position": {
+          "x": -297.3575,
+          "y": 1425.78056
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.72416,
+          "y": 0.72663
+        },
+        "scaleTall": 0.43412,
+        "tall": 190,
+        "elevation": 28.16364
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_方.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.7,
+        "shape3d.blend": "rgb(71,224,255)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6448,
+      "p": {
+        "parent": {
+          "__i": 6445
+        },
+        "host": {
+          "__i": 6445
+        },
+        "position": {
+          "x": -297.70636,
+          "y": 1426.2859
+        },
+        "anchorElevation": 0,
+        "elevation": 30.47518
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_圆角.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 1,
+        "shape3d.blend": "rgb(71,224,255)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6449,
+      "p": {
+        "parent": {
+          "__i": 6445
+        },
+        "host": {
+          "__i": 6445
+        },
+        "position": {
+          "x": -297.64106,
+          "y": 1425.83535
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测服务2_底座.json",
+        "wf.visible": "selected",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6450,
+      "p": {
+        "parent": {
+          "__i": 6445
+        },
+        "image": "symbols/文本/圆角方框.json",
+        "host": {
+          "__i": 6445
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": -297.71977,
+          "y": 1425.02469
+        },
+        "scale": {
+          "x": 0.23,
+          "y": 0.23
+        },
+        "scaleTall": 0.23
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/文本/圆角方框.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "shape3d.image.cache": true,
+        "2d.editable": false,
+        "3d.editable": false,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6451,
+      "p": {
+        "displayName": "交换大",
+        "position": {
+          "x": -570.25953,
+          "y": 1425.83292
+        },
+        "anchorElevation": 0,
+        "width": 68.11256,
+        "height": 68.06295,
+        "tall": 137.45963,
+        "elevation": 0.00001
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6452,
+      "p": {
+        "parent": {
+          "__i": 6451
+        },
+        "tag": "float",
+        "image": "symbols/文本/圆框.json",
+        "host": {
+          "__i": 6451
+        },
+        "position": {
+          "x": -570.25953,
+          "y": 1425.83292
+        },
+        "width": -1,
+        "height": 64,
+        "tall": -1,
+        "elevation": 38.31882
+      },
+      "s": {
+        "shape3d": "plane",
+        "shape3d.image": "symbols/图标库/电信/平面通讯图标/交换机4.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "envmap": 1,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      },
+      "a": {
+        "name": "INTERNET"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6453,
+      "p": {
+        "parent": {
+          "__i": 6451
+        },
+        "tag": "rotate",
+        "host": {
+          "__i": 6451
+        },
+        "position": {
+          "x": -570.0032,
+          "y": 1425.78056
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.72416,
+          "y": 0.72663
+        },
+        "scaleTall": 0.43412,
+        "tall": 190,
+        "elevation": 28.16364
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_方.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.7,
+        "shape3d.blend": "rgb(71,224,255)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6454,
+      "p": {
+        "parent": {
+          "__i": 6451
+        },
+        "host": {
+          "__i": 6451
+        },
+        "position": {
+          "x": -570.35206,
+          "y": 1426.2859
+        },
+        "anchorElevation": 0,
+        "elevation": 30.47518
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_圆角.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 1,
+        "shape3d.blend": "rgb(71,224,255)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6455,
+      "p": {
+        "parent": {
+          "__i": 6451
+        },
+        "host": {
+          "__i": 6451
+        },
+        "position": {
+          "x": -570.28676,
+          "y": 1425.83535
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测服务2_底座.json",
+        "wf.visible": "selected",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6456,
+      "p": {
+        "parent": {
+          "__i": 6451
+        },
+        "image": "symbols/文本/圆角方框.json",
+        "host": {
+          "__i": 6451
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": -570.36547,
+          "y": 1425.02469
+        },
+        "scale": {
+          "x": 0.23,
+          "y": 0.23
+        },
+        "scaleTall": 0.23
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/文本/圆角方框.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "shape3d.image.cache": true,
+        "2d.editable": false,
+        "3d.editable": false,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6457,
+      "p": {
+        "displayName": "防火墙",
+        "position": {
+          "x": -297.25156,
+          "y": 933.86201
+        },
+        "anchorElevation": 0,
+        "width": 68.11256,
+        "height": 68.06295,
+        "tall": 137.45963,
+        "elevation": 0.00001
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6458,
+      "p": {
+        "parent": {
+          "__i": 6457
+        },
+        "image": "symbols/文本/圆框.json",
+        "host": {
+          "__i": 6457
+        },
+        "position": {
+          "x": -297.64106,
+          "y": 934.45559
+        },
+        "width": -1,
+        "height": 64,
+        "tall": -1,
+        "elevation": 132.57434
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/图标库/电信/平面通讯图标/命令管理.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "envmap": 1,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.alwaysOnTop": true
+      },
+      "a": {
+        "name": "INTERNET"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6459,
+      "p": {
+        "parent": {
+          "__i": 6457
+        },
+        "host": {
+          "__i": 6457
+        },
+        "position": {
+          "x": -283.16301,
+          "y": 932.95559
+        },
+        "width": 3,
+        "height": 3,
+        "tall": 3,
+        "elevation": 121.93558
+      },
+      "s": {
+        "all.color": "rgba(64,252,255,0.30)",
+        "front.color": "",
+        "left.color": "",
+        "right.color": "",
+        "back.color": "",
+        "top.color": "",
+        "bottom.color": "",
+        "all.transparent": true,
+        "all.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6460,
+      "p": {
+        "parent": {
+          "__i": 6457
+        },
+        "host": {
+          "__i": 6457
+        },
+        "position": {
+          "x": -274.8228,
+          "y": 951.48309
+        },
+        "width": 5,
+        "height": 5,
+        "tall": 5,
+        "elevation": 141.44948
+      },
+      "s": {
+        "all.color": "rgba(64,252,255,0.30)",
+        "front.color": "",
+        "left.color": "",
+        "right.color": "",
+        "back.color": "",
+        "top.color": "",
+        "bottom.color": "",
+        "all.transparent": true,
+        "all.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6461,
+      "p": {
+        "parent": {
+          "__i": 6457
+        },
+        "host": {
+          "__i": 6457
+        },
+        "position": {
+          "x": -297.64106,
+          "y": 934.45559
+        },
+        "anchorElevation": 0,
+        "tall": 9,
+        "elevation": 101.08807
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测服务_飘浮.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6462,
+      "p": {
+        "parent": {
+          "__i": 6457
+        },
+        "tag": "rotate",
+        "host": {
+          "__i": 6457
+        },
+        "position": {
+          "x": -297.64106,
+          "y": 934.45559
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.72416,
+          "y": 0.72663
+        },
+        "scaleTall": 0.43412,
+        "tall": 349,
+        "elevation": 28.16364
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_方.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.7,
+        "shape3d.blend": "rgb(71,224,255)",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6463,
+      "p": {
+        "parent": {
+          "__i": 6457
+        },
+        "host": {
+          "__i": 6457
+        },
+        "position": {
+          "x": -297.64106,
+          "y": 934.45559
+        },
+        "anchorElevation": 0,
+        "tall": 67,
+        "elevation": 30.47518
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_圆角.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 1,
+        "shape3d.blend": "rgb(71,224,255)",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6464,
+      "p": {
+        "parent": {
+          "__i": 6457
+        },
+        "host": {
+          "__i": 6457
+        },
+        "position": {
+          "x": -297.64106,
+          "y": 934.45559
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测服务2_底座.json",
+        "wf.visible": "selected",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6465,
+      "p": {
+        "parent": {
+          "__i": 6457
+        },
+        "image": "symbols/文本/圆角方框.json",
+        "host": {
+          "__i": 6457
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": -297.64106,
+          "y": 934.45559
+        },
+        "scale": {
+          "x": 0.23,
+          "y": 0.23
+        },
+        "scaleTall": 0.23
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/文本/圆角方框.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6466,
+      "p": {
+        "tag": "float",
+        "image": "symbols/文本/圆框.json",
+        "position": {
+          "x": -299.28568,
+          "y": 936.39494
+        },
+        "width": -1,
+        "height": 64,
+        "tall": -1,
+        "elevation": 60.64433
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/图标库/电信/平面通讯图标/防火墙.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "envmap": 1,
+        "shape3d.image.cache": true,
+        "shape3d.blend": "#FEB64D",
+        "2d.movable": false,
+        "3d.movable": false
+      },
+      "a": {
+        "name": "INTERNET"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6467,
+      "p": {
+        "displayName": "交换大",
+        "position": {
+          "x": 161.39878,
+          "y": 603.78252
+        },
+        "anchorElevation": 0,
+        "width": 68.11256,
+        "height": 68.06295,
+        "tall": 137.45963,
+        "elevation": 0.00001
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6468,
+      "p": {
+        "parent": {
+          "__i": 6467
+        },
+        "tag": "float",
+        "image": "symbols/文本/圆框.json",
+        "host": {
+          "__i": 6467
+        },
+        "position": {
+          "x": 161.39878,
+          "y": 603.78252
+        },
+        "width": -1,
+        "height": 64,
+        "tall": -1,
+        "elevation": 38.31882
+      },
+      "s": {
+        "shape3d": "plane",
+        "shape3d.image": "symbols/图标库/电信/平面通讯图标/策略管理服务器2.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "envmap": 1,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      },
+      "a": {
+        "name": "INTERNET"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6469,
+      "p": {
+        "parent": {
+          "__i": 6467
+        },
+        "tag": "rotate",
+        "host": {
+          "__i": 6467
+        },
+        "position": {
+          "x": 161.65511,
+          "y": 603.73016
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.72416,
+          "y": 0.72663
+        },
+        "scaleTall": 0.43412,
+        "tall": 190,
+        "elevation": 28.16364
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_方.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.7,
+        "shape3d.blend": "rgb(71,224,255)",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6470,
+      "p": {
+        "parent": {
+          "__i": 6467
+        },
+        "host": {
+          "__i": 6467
+        },
+        "position": {
+          "x": 161.30625,
+          "y": 604.2355
+        },
+        "anchorElevation": 0,
+        "elevation": 30.47518
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_圆角.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 1,
+        "shape3d.blend": "rgb(71,224,255)",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6471,
+      "p": {
+        "parent": {
+          "__i": 6467
+        },
+        "host": {
+          "__i": 6467
+        },
+        "position": {
+          "x": 161.37155,
+          "y": 603.78495
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测服务2_底座.json",
+        "wf.visible": "selected",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6472,
+      "p": {
+        "parent": {
+          "__i": 6467
+        },
+        "image": "symbols/文本/圆角方框.json",
+        "host": {
+          "__i": 6467
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": 161.29284,
+          "y": 602.97429
+        },
+        "scale": {
+          "x": 0.23,
+          "y": 0.23
+        },
+        "scaleTall": 0.23
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/文本/圆角方框.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6473,
+      "p": {
+        "displayName": "防火墙",
+        "position": {
+          "x": 156.24573,
+          "y": 355.17598
+        },
+        "anchorElevation": 0,
+        "width": 79.8322,
+        "height": 80.13109,
+        "tall": 133.23333
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6474,
+      "p": {
+        "parent": {
+          "__i": 6473
+        },
+        "tag": "float",
+        "image": "symbols/文本/圆框.json",
+        "host": {
+          "__i": 6473
+        },
+        "position": {
+          "x": 156.40339,
+          "y": 359.01098
+        },
+        "width": -1,
+        "height": 64,
+        "tall": -1,
+        "elevation": 74.07276
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/图标库/电信/平面通讯图标/防火墙.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "envmap": 1,
+        "shape3d.image.cache": true,
+        "shape3d.blend": "#FEB64D",
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.alwaysOnTop": true
+      },
+      "a": {
+        "name": "INTERNET"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6475,
+      "p": {
+        "parent": {
+          "__i": 6473
+        },
+        "tag": "rotate",
+        "host": {
+          "__i": 6473
+        },
+        "position": {
+          "x": 154.47181,
+          "y": 355.17598
+        },
+        "anchorElevation": 0,
+        "width": 78.83083,
+        "height": 35.95702,
+        "elevation": 16.20293
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_方.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.7,
+        "shape3d.blend": "#FEB64D",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6476,
+      "p": {
+        "parent": {
+          "__i": 6473
+        },
+        "host": {
+          "__i": 6473
+        },
+        "position": {
+          "x": 154.47181,
+          "y": 355.17598
+        },
+        "anchorElevation": 0,
+        "width": 83.68904,
+        "height": 38.17306,
+        "elevation": 15.17601
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测服务_灯.json",
+        "wf.visible": "selected",
+        "shape3d.blend": "#FEB64D",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6477,
+      "p": {
+        "parent": {
+          "__i": 6473
+        },
+        "host": {
+          "__i": 6473
+        },
+        "position": {
+          "x": 153.31329,
+          "y": 355.17598
+        },
+        "anchorElevation": 0,
+        "width": 113.39546,
+        "height": 113.39531
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测服务_底座.json",
+        "wf.visible": "selected",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6478,
+      "p": {
+        "parent": {
+          "__i": 6473
+        },
+        "image": "symbols/文本/圆角方框.json",
+        "host": {
+          "__i": 6473
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": 153.31329,
+          "y": 355.17598
+        },
+        "scale": {
+          "x": 0.24,
+          "y": 0.24
+        },
+        "scaleTall": 0.24,
+        "width": 710,
+        "height": 2.84085,
+        "tall": 710
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/文本/圆角方框.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6479,
+      "p": {
+        "displayName": "internet",
+        "tag": "internet",
+        "position": {
+          "x": 155.68907,
+          "y": -691.41651
+        },
+        "anchorElevation": 0,
+        "width": 193.4095,
+        "height": 193.40961,
+        "tall": 204.93798
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6480,
+      "p": {
+        "parent": {
+          "__i": 6479
+        },
+        "host": {
+          "__i": 6479
+        },
+        "position": {
+          "x": 155.68907,
+          "y": -691.4165
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测中心服务.json",
+        "wf.visible": "selected",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6481,
+      "p": {
+        "parent": {
+          "__i": 6479
+        },
+        "host": {
+          "__i": 6479
+        },
+        "position": {
+          "x": 155.85367,
+          "y": -691.62068
+        },
+        "anchorElevation": 0,
+        "elevation": 33.09735
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测中心服务_灯.json",
+        "wf.visible": "selected",
+        "shape3d.blend": "rgb(79,255,158)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6482,
+      "p": {
+        "parent": {
+          "__i": 6479
+        },
+        "tag": "line",
+        "host": {
+          "__i": 6479
+        },
+        "position": {
+          "x": 155.68907,
+          "y": -691.41651
+        },
+        "anchorElevation": 0,
+        "elevation": 31.37806
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/科幻数字线条.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.opacity": 0.7,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6483,
+      "p": {
+        "parent": {
+          "__i": 6479
+        },
+        "tag": "rotate",
+        "host": {
+          "__i": 6479
+        },
+        "position": {
+          "x": 156.24573,
+          "y": -691.61963
+        },
+        "anchorElevation": 0,
+        "elevation": 31.42238
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_圆.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.7,
+        "shape3d.blend": "rgb(71,255,224)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6484,
+      "p": {
+        "parent": {
+          "__i": 6479
+        },
+        "image": "symbols/文本/圆框.json",
+        "host": {
+          "__i": 6479
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": 156.16428,
+          "y": -691.72395
+        },
+        "scale": {
+          "x": 0.55,
+          "y": 0.55
+        },
+        "scaleTall": 0.55
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/文本/圆框.json",
+        "shape3d.image.cache": true,
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "2d.editable": false,
+        "3d.editable": false,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6485,
+      "p": {
+        "parent": {
+          "__i": 6479
+        },
+        "host": {
+          "__i": 6479
+        },
+        "position": {
+          "x": 156.24573,
+          "y": -691.61963
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 1.3,
+          "y": 1.3
+        },
+        "scaleTall": 0.7,
+        "elevation": 31.42238
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_圆.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.7,
+        "shape3d.blend": "rgb(71,255,224)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6486,
+      "p": {
+        "parent": {
+          "__i": 6479
+        },
+        "tag": "serverPanel2",
+        "host": {
+          "__i": 6479
+        },
+        "rotation": 2.89981,
+        "position": {
+          "x": 154.77145,
+          "y": -690.50741
+        },
+        "anchorElevation": 0,
+        "width": 150,
+        "height": 150,
+        "tall": 130,
+        "elevation": 157.72239
+      },
+      "s": {
+        "shape3d": "cylinder",
+        "shape3d.color": "#DDDDDD",
+        "shape3d.bottom.visible": false,
+        "shape3d.top.visible": false,
+        "shape3d.image": "symbols/文本/服务端UI2.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "shape3d.side": 50,
+        "shape3d.opacity": 0.6,
+        "shape3d.side.to": 0,
+        "shape3d.from.visible": false,
+        "shape3d.to.visible": false,
+        "wf.visible": "selected",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6487,
+      "p": {
+        "parent": {
+          "__i": 6479
+        },
+        "tag": "serverPanel1",
+        "host": {
+          "__i": 6479
+        },
+        "rotation": 3.91871,
+        "position": {
+          "x": 155.68907,
+          "y": -691.41651
+        },
+        "anchorElevation": 0,
+        "width": 200,
+        "height": 200,
+        "tall": 130,
+        "elevation": 75.91798
+      },
+      "s": {
+        "shape3d": "cylinder",
+        "shape3d.color": "#DDDDDD",
+        "shape3d.bottom.visible": false,
+        "shape3d.top.visible": false,
+        "shape3d.image": "symbols/文本/服务端UI.json",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "shape3d.side": 50,
+        "shape3d.opacity": 0.6,
+        "shape3d.from.visible": false,
+        "shape3d.to.visible": false,
+        "wf.visible": "selected",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6488,
+      "p": {
+        "parent": {
+          "__i": 6479
+        },
+        "image": "symbols/文本/圆框.json",
+        "host": {
+          "__i": 6479
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": 156.16428,
+          "y": -691.72395
+        },
+        "scale": {
+          "x": 0.55,
+          "y": 0.55
+        },
+        "scaleTall": 0.55,
+        "width": -1,
+        "height": -1,
+        "tall": -1
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/文本/圆框.json",
+        "shape3d.image.cache": true,
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "envmap": 1,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6489,
+      "p": {
+        "displayName": "交换机",
+        "position": {
+          "x": 156.24573,
+          "y": -229.80696
+        },
+        "anchorElevation": 0,
+        "width": 99,
+        "height": 99,
+        "tall": 101.50788
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6490,
+      "p": {
+        "parent": {
+          "__i": 6489
+        },
+        "tag": "float",
+        "image": "symbols/文本/圆框.json",
+        "host": {
+          "__i": 6489
+        },
+        "position": {
+          "x": 156.16428,
+          "y": -229.62948
+        },
+        "width": -1,
+        "height": 64,
+        "tall": -1,
+        "elevation": 38.31882
+      },
+      "s": {
+        "shape3d": "plane",
+        "shape3d.image": "symbols/图标库/电信/平面通讯图标/路由2.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "envmap": 1,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      },
+      "a": {
+        "name": "INTERNET"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6491,
+      "p": {
+        "displayName": "中间件",
+        "parent": {
+          "__i": 6489
+        },
+        "host": {
+          "__i": 6489
+        },
+        "position": {
+          "x": 154.03525,
+          "y": -231.65581
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.3,
+          "y": 0.3
+        },
+        "scaleTall": 0.6,
+        "width": 422.68988,
+        "height": 422.6901
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测中心服务.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6492,
+      "p": {
+        "parent": {
+          "__i": 6489
+        },
+        "tag": "rotate",
+        "host": {
+          "__i": 6489
+        },
+        "position": {
+          "x": 155.25182,
+          "y": -232.09974
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.55018,
+          "y": 0.55018
+        },
+        "scaleTall": 0.91696,
+        "width": 210.76284,
+        "height": 210.76284,
+        "tall": 85,
+        "elevation": 14.75008
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_圆.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.7,
+        "shape3d.blend": "rgb(71,224,255)",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6493,
+      "p": {
+        "parent": {
+          "__i": 6489
+        },
+        "host": {
+          "__i": 6489
+        },
+        "position": {
+          "x": 153.31329,
+          "y": -232.02388
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 1.22808,
+          "y": 1.22808
+        },
+        "scaleTall": 1.22808,
+        "width": 154.66586,
+        "height": 154.66586,
+        "elevation": 16.0129
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_圆锥.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.7,
+        "shape3d.blend": "rgb(71,224,255)",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6494,
+      "p": {
+        "parent": {
+          "__i": 6489
+        },
+        "image": "symbols/文本/圆框.json",
+        "host": {
+          "__i": 6489
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": 154.77145,
+          "y": -229.97916
+        },
+        "scale": {
+          "x": 0.18,
+          "y": 0.16
+        },
+        "scaleTall": 0.18,
+        "width": 1093,
+        "height": 4.37093,
+        "tall": 1093
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/文本/圆框.json",
+        "shape3d.image.cache": true,
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6495,
+      "p": {
+        "displayName": "交换大",
+        "position": {
+          "x": 158.07524,
+          "y": 1196.40662
+        },
+        "anchorElevation": 0,
+        "width": 68.11256,
+        "height": 68.06295,
+        "tall": 137.45963,
+        "elevation": 0.00001
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6496,
+      "p": {
+        "parent": {
+          "__i": 6495
+        },
+        "tag": "float",
+        "image": "symbols/文本/圆框.json",
+        "host": {
+          "__i": 6495
+        },
+        "position": {
+          "x": 158.07524,
+          "y": 1196.40662
+        },
+        "width": -1,
+        "height": 64,
+        "tall": -1,
+        "elevation": 38.31882
+      },
+      "s": {
+        "shape3d": "plane",
+        "shape3d.image": "symbols/图标库/电信/平面通讯图标/策略管理服务器2.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "envmap": 1,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      },
+      "a": {
+        "name": "INTERNET"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6497,
+      "p": {
+        "parent": {
+          "__i": 6495
+        },
+        "tag": "rotate",
+        "host": {
+          "__i": 6495
+        },
+        "position": {
+          "x": 158.33157,
+          "y": 1196.35426
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.72416,
+          "y": 0.72663
+        },
+        "scaleTall": 0.43412,
+        "elevation": 28.16364
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_方.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.7,
+        "shape3d.blend": "rgb(71,224,255)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6498,
+      "p": {
+        "parent": {
+          "__i": 6495
+        },
+        "host": {
+          "__i": 6495
+        },
+        "position": {
+          "x": 157.98271,
+          "y": 1196.8596
+        },
+        "anchorElevation": 0,
+        "tall": 24,
+        "elevation": 30.47518
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_圆角.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 1,
+        "shape3d.blend": "rgb(71,224,255)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6499,
+      "p": {
+        "parent": {
+          "__i": 6495
+        },
+        "host": {
+          "__i": 6495
+        },
+        "position": {
+          "x": 158.04801,
+          "y": 1196.40905
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测服务2_底座.json",
+        "wf.visible": "selected",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6500,
+      "p": {
+        "parent": {
+          "__i": 6495
+        },
+        "image": "symbols/文本/圆角方框.json",
+        "host": {
+          "__i": 6495
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": 157.9693,
+          "y": 1195.59839
+        },
+        "scale": {
+          "x": 0.23,
+          "y": 0.23
+        },
+        "scaleTall": 0.23
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/文本/圆角方框.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "shape3d.image.cache": true,
+        "2d.editable": false,
+        "3d.editable": false,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6501,
+      "p": {
+        "displayName": "交换大",
+        "position": {
+          "x": 158.07524,
+          "y": 94.59898
+        },
+        "anchorElevation": 0,
+        "width": 68.11256,
+        "height": 68.06295,
+        "tall": 137.45963,
+        "elevation": 0.00001
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6502,
+      "p": {
+        "parent": {
+          "__i": 6501
+        },
+        "tag": "float",
+        "image": "symbols/文本/圆框.json",
+        "host": {
+          "__i": 6501
+        },
+        "position": {
+          "x": 158.07524,
+          "y": 94.59898
+        },
+        "width": -1,
+        "height": 64,
+        "tall": -1,
+        "elevation": 38.31882
+      },
+      "s": {
+        "shape3d": "plane",
+        "shape3d.image": "symbols/图标库/电信/平面通讯图标/交换机4.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "envmap": 1,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      },
+      "a": {
+        "name": "INTERNET"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6503,
+      "p": {
+        "parent": {
+          "__i": 6501
+        },
+        "tag": "rotate",
+        "host": {
+          "__i": 6501
+        },
+        "position": {
+          "x": 158.33157,
+          "y": 94.54662
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.72416,
+          "y": 0.72663
+        },
+        "scaleTall": 0.43412,
+        "tall": 190,
+        "elevation": 28.16364
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_方.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.7,
+        "shape3d.blend": "rgb(71,224,255)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6504,
+      "p": {
+        "parent": {
+          "__i": 6501
+        },
+        "host": {
+          "__i": 6501
+        },
+        "position": {
+          "x": 157.98271,
+          "y": 95.05196
+        },
+        "anchorElevation": 0,
+        "elevation": 30.47518
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_圆角.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 1,
+        "shape3d.blend": "rgb(71,224,255)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6505,
+      "p": {
+        "parent": {
+          "__i": 6501
+        },
+        "host": {
+          "__i": 6501
+        },
+        "position": {
+          "x": 158.04801,
+          "y": 94.60141
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测服务2_底座.json",
+        "wf.visible": "selected",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6506,
+      "p": {
+        "parent": {
+          "__i": 6501
+        },
+        "image": "symbols/文本/圆角方框.json",
+        "host": {
+          "__i": 6501
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": 157.9693,
+          "y": 93.79075
+        },
+        "scale": {
+          "x": 0.23,
+          "y": 0.23
+        },
+        "scaleTall": 0.23
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/文本/圆角方框.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "shape3d.image.cache": true,
+        "2d.editable": false,
+        "3d.editable": false,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6507,
+      "p": {
+        "displayName": "交换大",
+        "position": {
+          "x": 430.66562,
+          "y": 1425.83292
+        },
+        "anchorElevation": 0,
+        "width": 68.11256,
+        "height": 68.06295,
+        "tall": 137.45963,
+        "elevation": 0.00001
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6508,
+      "p": {
+        "parent": {
+          "__i": 6507
+        },
+        "tag": "float",
+        "image": "symbols/文本/圆框.json",
+        "host": {
+          "__i": 6507
+        },
+        "position": {
+          "x": 430.66562,
+          "y": 1425.83292
+        },
+        "width": -1,
+        "height": 64,
+        "tall": -1,
+        "elevation": 38.31882
+      },
+      "s": {
+        "shape3d": "plane",
+        "shape3d.image": "symbols/图标库/电信/平面通讯图标/交换机4.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "envmap": 1,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      },
+      "a": {
+        "name": "INTERNET"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6509,
+      "p": {
+        "parent": {
+          "__i": 6507
+        },
+        "tag": "rotate",
+        "host": {
+          "__i": 6507
+        },
+        "position": {
+          "x": 430.92195,
+          "y": 1425.78056
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.72416,
+          "y": 0.72663
+        },
+        "scaleTall": 0.43412,
+        "tall": 190,
+        "elevation": 28.16364
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_方.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.7,
+        "shape3d.blend": "rgb(71,224,255)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6510,
+      "p": {
+        "parent": {
+          "__i": 6507
+        },
+        "host": {
+          "__i": 6507
+        },
+        "position": {
+          "x": 430.57309,
+          "y": 1426.2859
+        },
+        "anchorElevation": 0,
+        "elevation": 30.47518
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_圆角.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 1,
+        "shape3d.blend": "rgb(71,224,255)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6511,
+      "p": {
+        "parent": {
+          "__i": 6507
+        },
+        "host": {
+          "__i": 6507
+        },
+        "position": {
+          "x": 430.63839,
+          "y": 1425.83535
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测服务2_底座.json",
+        "wf.visible": "selected",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6512,
+      "p": {
+        "parent": {
+          "__i": 6507
+        },
+        "image": "symbols/文本/圆角方框.json",
+        "host": {
+          "__i": 6507
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": 430.55968,
+          "y": 1425.02469
+        },
+        "scale": {
+          "x": 0.23,
+          "y": 0.23
+        },
+        "scaleTall": 0.23
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/文本/圆角方框.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "shape3d.image.cache": true,
+        "2d.editable": false,
+        "3d.editable": false,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6513,
+      "p": {
+        "displayName": "防火墙",
+        "position": {
+          "x": 158.43751,
+          "y": 933.86201
+        },
+        "anchorElevation": 0,
+        "width": 68.11256,
+        "height": 68.06295,
+        "tall": 137.45963,
+        "elevation": 0.00001
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6514,
+      "p": {
+        "parent": {
+          "__i": 6513
+        },
+        "image": "symbols/文本/圆框.json",
+        "host": {
+          "__i": 6513
+        },
+        "position": {
+          "x": 158.04801,
+          "y": 934.45559
+        },
+        "width": -1,
+        "height": 64,
+        "tall": -1,
+        "elevation": 132.57434
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/图标库/电信/平面通讯图标/命令管理.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "envmap": 1,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "shape3d.alwaysOnTop": true
+      },
+      "a": {
+        "name": "INTERNET"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6515,
+      "p": {
+        "parent": {
+          "__i": 6513
+        },
+        "host": {
+          "__i": 6513
+        },
+        "position": {
+          "x": 172.52606,
+          "y": 932.95559
+        },
+        "width": 3,
+        "height": 3,
+        "tall": 3,
+        "elevation": 121.93558
+      },
+      "s": {
+        "all.color": "rgba(64,252,255,0.30)",
+        "front.color": "",
+        "left.color": "",
+        "right.color": "",
+        "back.color": "",
+        "top.color": "",
+        "bottom.color": "",
+        "all.transparent": true,
+        "all.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6516,
+      "p": {
+        "parent": {
+          "__i": 6513
+        },
+        "host": {
+          "__i": 6513
+        },
+        "position": {
+          "x": 180.86627,
+          "y": 951.48309
+        },
+        "width": 5,
+        "height": 5,
+        "tall": 5,
+        "elevation": 141.44948
+      },
+      "s": {
+        "all.color": "rgba(64,252,255,0.30)",
+        "front.color": "",
+        "left.color": "",
+        "right.color": "",
+        "back.color": "",
+        "top.color": "",
+        "bottom.color": "",
+        "all.transparent": true,
+        "all.reverse.cull": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6517,
+      "p": {
+        "parent": {
+          "__i": 6513
+        },
+        "host": {
+          "__i": 6513
+        },
+        "position": {
+          "x": 158.04801,
+          "y": 934.45559
+        },
+        "anchorElevation": 0,
+        "tall": 9,
+        "elevation": 101.08807
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测服务_飘浮.json",
+        "wf.visible": "selected",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6518,
+      "p": {
+        "parent": {
+          "__i": 6513
+        },
+        "tag": "rotate",
+        "host": {
+          "__i": 6513
+        },
+        "position": {
+          "x": 158.04801,
+          "y": 934.45559
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.72416,
+          "y": 0.72663
+        },
+        "scaleTall": 0.43412,
+        "tall": 349,
+        "elevation": 28.16364
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_方.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.7,
+        "shape3d.blend": "rgb(71,224,255)",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6519,
+      "p": {
+        "parent": {
+          "__i": 6513
+        },
+        "host": {
+          "__i": 6513
+        },
+        "position": {
+          "x": 158.04801,
+          "y": 934.45559
+        },
+        "anchorElevation": 0,
+        "tall": 67,
+        "elevation": 30.47518
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_圆角.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 1,
+        "shape3d.blend": "rgb(71,224,255)",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6520,
+      "p": {
+        "parent": {
+          "__i": 6513
+        },
+        "host": {
+          "__i": 6513
+        },
+        "position": {
+          "x": 158.04801,
+          "y": 934.45559
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测服务2_底座.json",
+        "wf.visible": "selected",
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6521,
+      "p": {
+        "parent": {
+          "__i": 6513
+        },
+        "image": "symbols/文本/圆角方框.json",
+        "host": {
+          "__i": 6513
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": 158.04801,
+          "y": 934.45559
+        },
+        "scale": {
+          "x": 0.23,
+          "y": 0.23
+        },
+        "scaleTall": 0.23
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/文本/圆角方框.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6522,
+      "p": {
+        "tag": "float",
+        "image": "symbols/文本/圆框.json",
+        "position": {
+          "x": 156.40339,
+          "y": 936.39494
+        },
+        "width": -1,
+        "height": 64,
+        "tall": -1,
+        "elevation": 60.64433
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/图标库/电信/平面通讯图标/防火墙.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "envmap": 1,
+        "shape3d.image.cache": true,
+        "shape3d.blend": "#FEB64D",
+        "2d.movable": false,
+        "3d.movable": false
+      },
+      "a": {
+        "name": "INTERNET"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6523,
+      "p": {
+        "displayName": "第三方系统",
+        "position": {
+          "x": 765.03018,
+          "y": 1425.25469
+        },
+        "anchorElevation": 0,
+        "width": 71.21554,
+        "height": 71.23553,
+        "tall": 137.2396
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6524,
+      "p": {
+        "parent": {
+          "__i": 6523
+        },
+        "tag": "float",
+        "image": "symbols/文本/圆框.json",
+        "host": {
+          "__i": 6523
+        },
+        "position": {
+          "x": 764.79917,
+          "y": 1425.28987
+        },
+        "width": -1,
+        "height": 64,
+        "tall": -1,
+        "elevation": 104.73937
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/图标库/电信/平面通讯图标/接入交换机2.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "envmap": 1,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      },
+      "a": {
+        "name": "INTERNET"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6525,
+      "p": {
+        "parent": {
+          "__i": 6523
+        },
+        "host": {
+          "__i": 6523
+        },
+        "position": {
+          "x": 765.0364,
+          "y": 1425.27087
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/第三方系统.json",
+        "wf.visible": "selected",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6526,
+      "p": {
+        "parent": {
+          "__i": 6523
+        },
+        "host": {
+          "__i": 6523
+        },
+        "position": {
+          "x": 764.82287,
+          "y": 1426.09265
+        },
+        "anchorElevation": 0,
+        "elevation": 67.90622
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/第三方系统_灯.json",
+        "wf.visible": "selected",
+        "shape3d.blend": "rgb(122,237,255)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6527,
+      "p": {
+        "parent": {
+          "__i": 6523
+        },
+        "host": {
+          "__i": 6523
+        },
+        "position": {
+          "x": 765.02397,
+          "y": 1425.23852
+        },
+        "anchorElevation": 0,
+        "elevation": 16.33107
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/第三方系统_护罩.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.3,
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6528,
+      "p": {
+        "parent": {
+          "__i": 6523
+        },
+        "tag": "rotate",
+        "host": {
+          "__i": 6523
+        },
+        "position": {
+          "x": 764.79917,
+          "y": 1426.02255
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.4,
+          "y": 0.4
+        },
+        "scaleTall": 0.4,
+        "elevation": 67.83336
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_圆.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.7,
+        "shape3d.blend": "rgb(71,224,255)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6529,
+      "p": {
+        "parent": {
+          "__i": 6523
+        },
+        "image": "symbols/文本/圆角方框.json",
+        "host": {
+          "__i": 6523
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": 765.41869,
+          "y": 1425.05987
+        },
+        "scale": {
+          "x": 0.23,
+          "y": 0.23
+        },
+        "scaleTall": 0.23
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/文本/圆角方框.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "shape3d.image.cache": true,
+        "2d.editable": false,
+        "3d.editable": false,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 6530,
+      "p": {
+        "tag": "pipeline",
+        "position": {
+          "x": -72.09745,
+          "y": 356.52628
+        },
+        "width": 460.73485,
+        "height": 1,
+        "tall": 0,
+        "elevation": 12.47466,
+        "segments": {
+          "__a": [
+            1,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 158.26997,
+              "y": 356.52628,
+              "e": 12.47466
+            },
+            {
+              "x": -302.46488,
+              "y": 356.52628,
+              "e": 12.47466
+            }
+          ]
+        },
+        "thickness": 6
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgb(242,83,75)",
+        "shape3d.top.color": "#BFBFBF",
+        "shape3d.bottom.color": "#BFBFBF",
+        "shape.border.color": "#BFBFBF",
+        "shape3d.reverse.flip": true,
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.5,
+        "all.visible": false,
+        "top.visible": true,
+        "top.image": "assets/objs/故障检测平台/电路流动.png",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 6531,
+      "p": {
+        "tag": "pipeline",
+        "rotation": 3.14159,
+        "position": {
+          "x": -64.55759,
+          "y": 1257.35345
+        },
+        "width": 516.81033,
+        "height": 117.17563,
+        "tall": 66.44771,
+        "elevation": 47.73586,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 167.08578,
+              "y": 1315.94127,
+              "e": 14.51201
+            },
+            {
+              "x": 167.08578,
+              "y": 1315.94127,
+              "e": 14.51201
+            },
+            {
+              "x": 193.84757,
+              "y": 1198.76563,
+              "e": 14.51201
+            },
+            {
+              "x": 45.73473,
+              "y": 1198.76563,
+              "e": 14.51201
+            },
+            {
+              "x": -102.37812,
+              "y": 1198.76563,
+              "e": 14.51201
+            },
+            {
+              "x": -241.49576,
+              "y": 1315.94127,
+              "e": 32.87256
+            },
+            {
+              "x": -73.44464,
+              "y": 1315.94127,
+              "e": 32.87256
+            },
+            {
+              "x": 64.69907,
+              "y": 1315.94127,
+              "e": 80.95972
+            },
+            {
+              "x": -60.33743,
+              "y": 1224.1321,
+              "e": 14.51201
+            },
+            {
+              "x": -191.65009,
+              "y": 1224.1321,
+              "e": 14.51201
+            },
+            {
+              "x": -322.96275,
+              "y": 1224.1321,
+              "e": 14.51201
+            },
+            {
+              "x": -288.00128,
+              "y": 1315.94127,
+              "e": 14.51201
+            },
+            {
+              "x": -288.00128,
+              "y": 1315.94127,
+              "e": 14.51201
+            }
+          ]
+        },
+        "thickness": 6
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgb(51,153,255)",
+        "shape3d.top.color": "#BFBFBF",
+        "shape3d.bottom.color": "#BFBFBF",
+        "shape.border.color": "#BFBFBF",
+        "shape3d.reverse.flip": true,
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.5,
+        "all.visible": false,
+        "top.visible": true,
+        "top.image": "assets/objs/故障检测平台/电路流动.png",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 6532,
+      "p": {
+        "tag": "pipeline",
+        "position": {
+          "x": -67.17136,
+          "y": 1165.42786
+        },
+        "width": 457.28195,
+        "height": 58.89457,
+        "tall": 0,
+        "elevation": 14.51201,
+        "segments": {
+          "__a": [
+            1,
+            4,
+            4
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 161.46961,
+              "y": 1194.87515,
+              "e": 14.51201
+            },
+            {
+              "x": 161.46961,
+              "y": 1194.87515,
+              "e": 14.51201
+            },
+            {
+              "x": 38.96969,
+              "y": 1135.98057,
+              "e": 14.51201
+            },
+            {
+              "x": -76.21402,
+              "y": 1135.98057,
+              "e": 14.51201
+            },
+            {
+              "x": -191.39773,
+              "y": 1135.98057,
+              "e": 14.51201
+            },
+            {
+              "x": -295.81233,
+              "y": 1194.87515,
+              "e": 14.51201
+            },
+            {
+              "x": -295.81233,
+              "y": 1194.87515,
+              "e": 14.51201
+            }
+          ]
+        },
+        "thickness": 6
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "#FEB64D",
+        "shape3d.top.color": "#BFBFBF",
+        "shape3d.bottom.color": "#BFBFBF",
+        "shape.border.color": "#BFBFBF",
+        "shape3d.reverse.flip": true,
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.5,
+        "all.visible": false,
+        "top.visible": true,
+        "top.image": "assets/objs/故障检测平台/电路流动.png",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 6533,
+      "p": {
+        "tag": "pipeline",
+        "position": {
+          "x": -72.09745,
+          "y": 602.24429
+        },
+        "width": 460.73485,
+        "height": 1,
+        "tall": 0,
+        "elevation": 12.47466,
+        "segments": {
+          "__a": [
+            1,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 158.26997,
+              "y": 602.24429,
+              "e": 12.47466
+            },
+            {
+              "x": -302.46488,
+              "y": 602.24429,
+              "e": 12.47466
+            }
+          ]
+        },
+        "thickness": 6
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgb(51,153,255)",
+        "shape3d.top.color": "#BFBFBF",
+        "shape3d.bottom.color": "#BFBFBF",
+        "shape.border.color": "#BFBFBF",
+        "shape3d.reverse.flip": true,
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.5,
+        "all.visible": false,
+        "top.visible": true,
+        "top.image": "assets/objs/故障检测平台/电路流动.png",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 6534,
+      "p": {
+        "tag": "pipeline",
+        "position": {
+          "x": -72.09745,
+          "y": -229.12948
+        },
+        "width": 460.73485,
+        "height": 1,
+        "tall": 0,
+        "elevation": 12.47466,
+        "segments": {
+          "__a": [
+            1,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 158.26997,
+              "y": -229.12948,
+              "e": 12.47466
+            },
+            {
+              "x": -302.46488,
+              "y": -229.12948,
+              "e": 12.47466
+            }
+          ]
+        },
+        "thickness": 6
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgb(51,153,255)",
+        "shape3d.top.color": "#BFBFBF",
+        "shape3d.bottom.color": "#BFBFBF",
+        "shape.border.color": "#BFBFBF",
+        "shape3d.reverse.flip": true,
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.5,
+        "all.visible": false,
+        "top.visible": true,
+        "top.image": "assets/objs/故障检测平台/电路流动.png",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Polyline",
+      "i": 6535,
+      "p": {
+        "tag": "pipeline",
+        "position": {
+          "x": -72.09745,
+          "y": 93.79075
+        },
+        "width": 460.73485,
+        "height": 1,
+        "tall": 0,
+        "elevation": 12.47466,
+        "segments": {
+          "__a": [
+            1,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 158.26997,
+              "y": 93.79075,
+              "e": 12.47466
+            },
+            {
+              "x": -302.46488,
+              "y": 93.79075,
+              "e": 12.47466
+            }
+          ]
+        },
+        "thickness": 6
+      },
+      "s": {
+        "shape.border.width": 10,
+        "shape3d": "cylinder",
+        "shape3d.color": "rgb(51,153,255)",
+        "shape3d.top.color": "#BFBFBF",
+        "shape3d.bottom.color": "#BFBFBF",
+        "shape.border.color": "#BFBFBF",
+        "shape3d.reverse.flip": true,
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.5,
+        "all.visible": false,
+        "top.visible": true,
+        "top.image": "assets/objs/故障检测平台/电路流动.png",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6536,
+      "p": {
+        "tag": "float",
+        "image": "symbols/文本/圆框.json",
+        "position": {
+          "x": -297.64106,
+          "y": -708.76071
+        },
+        "width": -1,
+        "height": 64,
+        "tall": -1,
+        "elevation": 252.47544
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/图标库/电信/平面通讯图标/互联网.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "envmap": 1,
+        "2d.movable": false,
+        "3d.movable": false
+      },
+      "a": {
+        "name": "INTERNET"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6537,
+      "p": {
+        "tag": "float",
+        "image": "symbols/文本/圆框.json",
+        "position": {
+          "x": 161.99663,
+          "y": -708.76071
+        },
+        "width": -1,
+        "height": 64,
+        "tall": -1,
+        "elevation": 252.47544
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/图标库/电信/平面通讯图标/互联网.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "envmap": 1,
+        "2d.movable": false,
+        "3d.movable": false
+      },
+      "a": {
+        "name": "INTERNET"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6538,
+      "p": {
+        "displayName": "高级",
+        "position": {
+          "x": -297.61383,
+          "y": 1196.40662
+        },
+        "anchorElevation": 0,
+        "width": 68.11256,
+        "height": 68.06295,
+        "tall": 137.45963,
+        "elevation": 0.00001
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6539,
+      "p": {
+        "parent": {
+          "__i": 6538
+        },
+        "tag": "float",
+        "image": "symbols/文本/圆框.json",
+        "host": {
+          "__i": 6538
+        },
+        "position": {
+          "x": -297.61383,
+          "y": 1196.40662
+        },
+        "width": -1,
+        "height": 64,
+        "tall": -1,
+        "elevation": 38.31882
+      },
+      "s": {
+        "shape3d": "plane",
+        "shape3d.image": "symbols/图标库/电信/平面通讯图标/策略管理服务器2.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "envmap": 1,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "wf.color": "rgb(212,0,0)",
+        "shape3d.blend": "rgb(212,0,0)"
+      },
+      "a": {
+        "name": "INTERNET"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6540,
+      "p": {
+        "parent": {
+          "__i": 6538
+        },
+        "tag": "rotate",
+        "host": {
+          "__i": 6538
+        },
+        "position": {
+          "x": -297.3575,
+          "y": 1196.35426
+        },
+        "anchorElevation": 0,
+        "scale": {
+          "x": 0.72416,
+          "y": 0.72663
+        },
+        "scaleTall": 0.43412,
+        "elevation": 28.16364
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_方.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.7,
+        "shape3d.blend": "rgb(212,0,0)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "wf.color": "rgb(212,0,0)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6541,
+      "p": {
+        "parent": {
+          "__i": 6538
+        },
+        "host": {
+          "__i": 6538
+        },
+        "position": {
+          "x": -297.70636,
+          "y": 1196.8596
+        },
+        "anchorElevation": 0,
+        "tall": 24,
+        "elevation": 30.47518
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_圆角.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 1,
+        "shape3d.blend": "rgb(212,0,0)",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "wf.color": "rgb(212,0,0)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6542,
+      "p": {
+        "parent": {
+          "__i": 6538
+        },
+        "host": {
+          "__i": 6538
+        },
+        "position": {
+          "x": -297.64106,
+          "y": 1196.40905
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测服务2_底座.json",
+        "wf.visible": "selected",
+        "2d.editable": false,
+        "3d.editable": false,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false,
+        "wf.color": "rgb(212,0,0)",
+        "shape3d.blend": "rgb(212,0,0)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6543,
+      "p": {
+        "parent": {
+          "__i": 6538
+        },
+        "tag": "scan",
+        "image": "symbols/文本/圆角方框.json",
+        "host": {
+          "__i": 6538
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": -297.71977,
+          "y": 1195.59839
+        },
+        "width": 164,
+        "tall": 164
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/文本/圆角方框.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "shape3d.image.cache": true,
+        "2d.editable": false,
+        "3d.editable": false,
+        "2d.movable": false,
+        "3d.movable": false,
+        "wf.color": null,
+        "shape3d.blend": "rgb(212,0,0)"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6544,
+      "p": {
+        "displayName": "高级",
+        "position": {
+          "x": 156.14718,
+          "y": 1424.72091
+        },
+        "anchorElevation": 0,
+        "width": 68.11256,
+        "height": 68.06295,
+        "tall": 137.45963,
+        "elevation": 0.00001
+      },
+      "s": {
+        "shape3d": "box",
+        "shape3d.transparent": true,
+        "shape3d.color": "rgba(0, 0, 0, 0)",
+        "shape3d.reverse.cull": true,
+        "__group__": true,
+        "shape3d.image.cache": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6545,
+      "p": {
+        "parent": {
+          "__i": 6544
+        },
+        "tag": "float",
+        "image": "symbols/文本/圆框.json",
+        "host": {
+          "__i": 6544
+        },
+        "position": {
+          "x": 156.14718,
+          "y": 1424.72091
+        },
+        "width": -1,
+        "height": 64,
+        "tall": -1,
+        "elevation": 38.31882
+      },
+      "s": {
+        "shape3d": "plane",
+        "shape3d.image": "symbols/图标库/电信/平面通讯图标/交换机4.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "envmap": 1,
+        "shape3d.image.cache": true,
+        "wf.color": "rgb(212,0,0)",
+        "shape3d.blend": "rgb(212,0,0)",
+        "2d.movable": false,
+        "3d.movable": false
+      },
+      "a": {
+        "name": "INTERNET"
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6546,
+      "p": {
+        "parent": {
+          "__i": 6544
+        },
+        "tag": "rotate",
+        "host": {
+          "__i": 6544
+        },
+        "position": {
+          "x": 156.40351,
+          "y": 1424.66855
+        },
+        "anchorElevation": 0,
+        "elevation": 28.16364
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_方.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 0.7,
+        "shape3d.blend": "rgb(212,0,0)",
+        "shape3d.image.cache": true,
+        "wf.color": "rgb(212,0,0)",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6547,
+      "p": {
+        "parent": {
+          "__i": 6544
+        },
+        "host": {
+          "__i": 6544
+        },
+        "position": {
+          "x": 156.05465,
+          "y": 1425.17389
+        },
+        "anchorElevation": 0,
+        "tall": 24,
+        "elevation": 30.47518
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/光束_圆角.json",
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.opacity": 1,
+        "shape3d.blend": "rgb(212,0,0)",
+        "shape3d.image.cache": true,
+        "wf.color": "rgb(212,0,0)",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6548,
+      "p": {
+        "parent": {
+          "__i": 6544
+        },
+        "host": {
+          "__i": 6544
+        },
+        "position": {
+          "x": 156.11995,
+          "y": 1424.72334
+        },
+        "anchorElevation": 0
+      },
+      "s": {
+        "shape3d": "models/故障检测平台/检测服务2_底座.json",
+        "wf.visible": "selected",
+        "shape3d.image.cache": true,
+        "wf.color": "rgb(212,0,0)",
+        "shape3d.blend": "rgb(212,0,0)",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Node",
+      "i": 6549,
+      "p": {
+        "parent": {
+          "__i": 6544
+        },
+        "tag": "scan",
+        "image": "symbols/文本/圆角方框.json",
+        "host": {
+          "__i": 6544
+        },
+        "rotationX": -1.5708,
+        "position": {
+          "x": 156.04124,
+          "y": 1423.91268
+        },
+        "width": 164,
+        "tall": 164
+      },
+      "s": {
+        "shape3d": "billboard",
+        "shape3d.image": "symbols/文本/圆角方框.json",
+        "shape3d.fixSizeOnScreen": false,
+        "wf.visible": "selected",
+        "shape3d.transparent": true,
+        "shape3d.reverse.flip": true,
+        "shape3d.image.cache": true,
+        "wf.color": null,
+        "shape3d.blend": "rgb(212,0,0)",
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 6550,
+      "p": {
+        "displayName": "流光",
+        "tag": "light",
+        "position": {
+          "x": -71.64712,
+          "y": 418.02774
+        },
+        "width": 991.82107,
+        "height": 2015.92176,
+        "tall": 1,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 424.26341,
+              "y": 1425.98862
+            },
+            {
+              "x": -297.25156,
+              "y": 1194.79003
+            },
+            {
+              "x": 157.90563,
+              "y": 1425.98862
+            },
+            {
+              "x": -297.25156,
+              "y": 1194.79003
+            },
+            {
+              "x": -297.25156,
+              "y": 1425.98862
+            },
+            {
+              "x": -297.25156,
+              "y": 1194.79003
+            },
+            {
+              "x": -567.55766,
+              "y": 1425.98862
+            },
+            {
+              "x": -297.25156,
+              "y": 1194.79003
+            },
+            {
+              "x": 157.90563,
+              "y": 603.42508
+            },
+            {
+              "x": -297.25156,
+              "y": 355.28766
+            },
+            {
+              "x": -567.55766,
+              "y": 1194.79003
+            },
+            {
+              "x": -297.25156,
+              "y": 1194.79003
+            },
+            {
+              "x": -297.25156,
+              "y": -589.93314
+            }
+          ]
+        },
+        "thickness": "3"
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape.background": null,
+        "shape.border.width": 14,
+        "shape.border.color": "#DDDDDD",
+        "front.visible": false,
+        "back.visible": false,
+        "left.visible": false,
+        "right.visible": false,
+        "bottom.visible": false,
+        "all.visible": false,
+        "top.visible": true,
+        "top.image": "symbols/htdesign/flow/gradual_change_blue2.png",
+        "top.uv.scale": [
+          4,
+          1
+        ],
+        "top.transparent": true,
+        "top.reverse.flip": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    },
+    {
+      "c": "ht.Shape",
+      "i": 6551,
+      "p": {
+        "displayName": "流光",
+        "tag": "light",
+        "position": {
+          "x": 98.45849,
+          "y": 418.02774
+        },
+        "width": 1348.30238,
+        "height": 2015.92176,
+        "tall": 1,
+        "segments": {
+          "__a": [
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            2,
+            2
+          ]
+        },
+        "points": {
+          "__a": [
+            {
+              "x": 158.43752,
+              "y": 1425.98862
+            },
+            {
+              "x": 158.43752,
+              "y": 1194.79003
+            },
+            {
+              "x": -575.6927,
+              "y": 1425.98862
+            },
+            {
+              "x": 158.43752,
+              "y": 1194.79003
+            },
+            {
+              "x": -298.27557,
+              "y": 1425.98862
+            },
+            {
+              "x": 158.43752,
+              "y": 1194.79003
+            },
+            {
+              "x": 432.94609,
+              "y": 1425.98862
+            },
+            {
+              "x": 158.43752,
+              "y": 1194.79003
+            },
+            {
+              "x": -298.27557,
+              "y": 609.06456
+            },
+            {
+              "x": 158.43752,
+              "y": 355.28766
+            },
+            {
+              "x": 772.60968,
+              "y": 1425.98862
+            },
+            {
+              "x": 432.94609,
+              "y": 1194.79003
+            },
+            {
+              "x": 158.43752,
+              "y": 1194.79003
+            },
+            {
+              "x": 158.43752,
+              "y": -589.93314
+            }
+          ]
+        },
+        "thickness": "3"
+      },
+      "s": {
+        "all.color": "#DDDDDD",
+        "shape.background": null,
+        "shape.border.width": 14,
+        "shape.border.color": "#DDDDDD",
+        "front.visible": false,
+        "back.visible": false,
+        "left.visible": false,
+        "right.visible": false,
+        "bottom.visible": false,
+        "all.visible": false,
+        "top.visible": true,
+        "top.image": "symbols/htdesign/flow/gradual_change_orange.png",
+        "top.uv.scale": [
+          4,
+          1
+        ],
+        "top.transparent": true,
+        "top.reverse.flip": true,
+        "2d.movable": false,
+        "3d.movable": false
+      }
+    }
+  ],
+  "scene": {
+    "eye": [
+      -373.02671,
+      170.72554,
+      880.32071
+    ],
+    "center": [
+      -294.03396,
+      28.16364,
+      603.73016
+    ],
+    "near": 10,
+    "far": 10000,
+    "background": "rgb(0,0,0)",
+    "gridVisible": false,
+    "gridSize": 50,
+    "gridGap": 50,
+    "gridColor": [
+      0.4,
+      0.75,
+      0.85,
+      1
+    ],
+    "editHelperDisabled": false
+  }
+}

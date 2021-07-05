@@ -1,0 +1,68 @@
+{
+  "background": "rgb(61,61,61)",
+  "width": 64,
+  "height": 64,
+  "comps": [
+    {
+      "type": "rect",
+      "background": "rgb(255,255,255)",
+      "borderColor": "#979797",
+      "rect": [
+        0,
+        17.08454,
+        12,
+        9
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(255,255,255)",
+      "borderColor": "#979797",
+      "rect": [
+        52,
+        17.08454,
+        12,
+        9
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(255,255,255)",
+      "borderColor": "#979797",
+      "rect": [
+        52,
+        37.91002,
+        12,
+        9
+      ]
+    },
+    {
+      "type": "rect",
+      "background": "rgb(255,255,255)",
+      "borderColor": "#979797",
+      "rect": [
+        0,
+        37.91002,
+        12,
+        9
+      ]
+    },
+    {
+      "type": "shape",
+      "borderWidth": 3,
+      "borderColor": "rgb(255,255,255)",
+      "points": [
+        10.45532,
+        21.58454,
+        53.54468,
+        21.58454,
+        10.45532,
+        42.41002,
+        53.54468,
+        42.41002,
+        10.45532,
+        21.58454
+      ]
+    }
+  ]
+}

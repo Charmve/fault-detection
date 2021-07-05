@@ -1,0 +1,8 @@
+﻿{
+  "modelType": "obj",
+  "obj": "assets/objs/故障检测平台/科幻数字线条.obj",
+  "mtl": "assets/objs/故障检测平台/科幻数字线条.mtl",
+"reverseFlipMtls": "*",
+  "image": "",
+  "prefix": "assets/objs/故障检测平台/"
+}
