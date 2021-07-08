@@ -2,7 +2,6 @@
   "v": "7.0.2",
   "p": {
     "background": "rgb(0,0,0)",
-    "envmap": "assets/htdesign/scene/environment/dusk_01.jpg",
     "autoAdjustIndex": true,
     "hierarchicalRendering": true,
     "postProcessingData": {
